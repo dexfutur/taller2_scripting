@@ -8,12 +8,24 @@ namespace taller2
 {
     public class carta
     {
-        private int name;
-        private int rarity;
-        private int cp;
+        private string name;
+        private string rarity;
+        private int costPoint;
+        private string type;
 
-        public int Name { get => name; private set => name = value; }
-        public int Rarity { get => rarity; private set => rarity = value; }
-        public int Cp { get => cp; private set => cp = value; }
+
+        public carta(string name, string rarity, int costPoint, string type)
+        {
+            this.name = name;
+            this.rarity = rarity;
+            this.costPoint = costPoint;
+            this.type = type;
+        }
+
+        public string Name { get => name; set => name = value; }
+        public string Rarity { get => rarity; set => rarity = value; }
+        public int CostPoint { get => costPoint; set => costPoint = value; }
+
+        public string Type { get => type; set => type = value; }
     }
 }

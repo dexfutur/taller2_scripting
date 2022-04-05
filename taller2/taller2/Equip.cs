@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace taller2
 {
-    class Equip : carta
+    public class Equip : carta
     {
-        private int TargetA;
-        private int EP;
-        private int affinity;
+        private string targetAttribute;
+        private int effectPoints;
+        private string affinity;
 
-        public int TargetA1 { get => TargetA; set => TargetA = value; }
-        public int EP1 { get => EP; set => EP = value; }
-        public int Affinity { get => affinity; set => affinity = value; }
+        public Equip(string targetAttribute, int effectPoints, string affinity, string name, string rarity, int costPoint, string type) : base(name, rarity, costPoint, type)
+        {
+            this.targetAttribute = targetAttribute;
+            this.effectPoints = effectPoints;
+            this.affinity = affinity;
+        }
+
+        public string TargetAttibrute { get => targetAttribute; set => targetAttribute = value; }
+        public int EffectPoints { get => effectPoints; set => effectPoints = value; }
+        public string Affinity { get => affinity; set => affinity = value; }
     }
 }
