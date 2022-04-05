@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace taller2
 {
-    public class Character : carta
+    public class Character : Card
     {
         private int attackPoints;
         private int resistPoints;

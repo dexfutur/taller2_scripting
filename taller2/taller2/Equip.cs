@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace taller2
 {
-    public class Equip : carta
+    public class Equip : Card
     {
         private string targetAttribute;
         private int effectPoints;

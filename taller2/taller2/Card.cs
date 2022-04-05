@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace taller2
 {
-    public class carta
+    public class Card
     {
         private string name;
         private string rarity;
         private int costPoint;
         private string type;
 
-
-        public carta(string name, string rarity, int costPoint, string type)
+        public Card(string name, string rarity, int costPoint, string type)
         {
             this.name = name;
             this.rarity = rarity;

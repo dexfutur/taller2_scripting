@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace taller2
 {
-    public class SuppSkill : carta
+    public class SupportSkill : Card
     {
 
         private string effectType;
         private int effectPoints;
 
-        public SuppSkill(string effectType, int effectPoints, string name, string rarity, int costPoint, string type) : base(name, rarity, costPoint, type)
+        public SupportSkill(string effectType, int effectPoints, string name, string rarity, int costPoint, string type) : base(name, rarity, costPoint, type)
         {
             this.effectType = effectType;
             this.effectPoints = effectPoints;

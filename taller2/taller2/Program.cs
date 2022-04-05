@@ -1,21 +1,24 @@
-﻿using System;
+﻿using taller2;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace taller2
+
+
+namespace MyApp
 {
     public class Program
     {
-        
 
-        List<carta> listCards = new List<carta>();
+
+        List<Card> listCards = new List<Card>();
         List<Deck> listDeck = new List<Deck>();
         List<Player> listPlayers = new List<Player>();
         List<Character> listCharacters = new List<Character>();
         List<Equip> listEquips = new List<Equip>();
-        List<SuppSkill> listSupport = new List<SuppSkill>();
+        List<SupportSkill> listSupport = new List<SupportSkill>();
         static void Main(string[] args)     {}
 
         public Character generateCardCharacter(string name, string rarity, int costPoints, int attackPoints, int resistPoints, Equip equip, string affinity)
@@ -32,14 +35,14 @@ namespace taller2
             return cardEquip;
         }
 
-        public SuppSkill generateCardSupport(String name, string rarity, int costPoints, string effectType, int effectPoints)
+        public SupportSkill generateCardSupport(String name, string rarity, int costPoints, string effectType, int effectPoints)
         {
-            SuppSkill cardSupport = new SuppSkill(effectType, effectPoints, name, rarity, costPoints, type: "Support Skill");
+            SupportSkill cardSupport = new SupportSkill(effectType, effectPoints, name, rarity, costPoints, type: "Support Skill");
             return cardSupport;
         }
 
 
-        public string addCardToDeck(carta card, int costPoint)
+        public string addCardToDeck(Card card, int costPoint)
         {
 
             if (listDeck.Count == 0)
@@ -122,7 +125,7 @@ namespace taller2
             listEquips.Add(card);
 
         }
-        public void addCardSupport(SuppSkill card)
+        public void addCardSupport(SupportSkill card)
         {
             listSupport.Add(card);
 

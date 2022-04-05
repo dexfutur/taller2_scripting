@@ -11,7 +11,7 @@ namespace taller2
         private string name;
         List<Character> character = new List<Character>();
         List<Equip> equip = new List<Equip>();
-        List<SuppSkill> support = new List<SuppSkill>();
+        List<SupportSkill> support = new List<SupportSkill>();
 
         public Player(string name)
         {
@@ -30,7 +30,7 @@ namespace taller2
         {
             equip.Add(card);
         }
-        public void createDeckSupport(SuppSkill card)
+        public void createDeckSupport(SupportSkill card)
         {
             support.Add(card);
         }
@@ -46,9 +46,11 @@ namespace taller2
 
         }
 
-        public List<SuppSkill> getCardsSupport()
+        public List<SupportSkill> getCardsSupport()
         {
             return support;
         }
+
+
     }
 }

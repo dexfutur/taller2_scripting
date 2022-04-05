@@ -8,6 +8,7 @@ namespace taller2
 {
     public class Deck
     {
+
         int costPoints;
 
         public Deck(int costPoints)
@@ -18,5 +19,6 @@ namespace taller2
         }
 
         public int CostPoints { get => costPoints; set => costPoints = value; }
+
     }
 }
